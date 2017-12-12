@@ -1,42 +1,14 @@
 {
-  "name": "nodejs-api-boilerplate",
-  "description": "A NodeJS server boilerplate for help you kickstart you futur node project. ES6/ES7 features.",
-  "version": "1.0.3",
-  "author": "Emanuel Quimper <quimperemanuel@gmail.com> <https://github.com/EQuimper>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EQuimper/nodejs-api-boilerplate"
-  },
-  "bugs": {
-    "type": "git",
-    "url": "https://github.com/EQuimper/nodejs-api-boilerplate/issues"
-  },
+  "name": "thanhthanh",
+  "description": "Not show",
+  "version": "1.0.0",
+  "author": "Thanh Pham",
   "engines": {
     "node": ">= 6.10",
     "npm": ">= 3.10",
     "yarn": ">=0.20.3"
   },
   "main": "./src/index.js",
-  "keywords": [
-    "express",
-    "es6",
-    "es7",
-    "rest",
-    "api",
-    "boilerplate",
-    "mongodb",
-    "node",
-    "javascript",
-    "pm2",
-    "babel",
-    "nps",
-    "commitizen",
-    "semantic-release",
-    "prettier",
-    "lint-staged",
-    "webpack2"
-  ],
-  "license": "MIT",
   "lint-staged": {
     "src/**/*.js": [
       "yarn prettier",
