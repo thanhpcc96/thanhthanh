@@ -16,6 +16,8 @@
     ]
   },
   "scripts": {
+    "thanh": "cross-env NODE_ENV=development nodemon index.js",
+    "dev-build": "cross-env NODE_ENV=production yarn run webpack -p",
     "build": "nps build",
     "start": "nps",
     "test": "nps test",
@@ -46,14 +48,18 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
-    "babel-register": "^6.26.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
     "chai": "^4.1.1",
     "coveralls": "^3.0.0",
+    "css-loader": "^0.26.1",
     "eslint": "^4.5.0",
     "eslint-config-equimper": "^2.2.1",
     "eslint-config-prettier": "^2.3.0",
+    "eslint-config-rallycoding": "^3.2.0",
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
     "faker": "^4.1.0",
-    "husky": "^0.14.3",
+    "html-webpack-plugin": "^2.26.0",
     "istanbul": "1.1.0-alpha.1",
     "lint-staged": "^4.0.4",
     "mocha": "^3.5.0",
@@ -67,10 +73,14 @@
     "superagent": "^3.6.0",
     "supertest": "^3.0.0",
     "webpack": "^3.5.5",
+    "webpack-dev-middleware": "^1.9.0",
     "webpack-node-externals": "^1.6.0",
     "webpack-sources": "1.0.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.17.1",
     "chalk": "^2.1.0",
@@ -94,6 +104,8 @@
     "pm2": "^2.6.1",
     "pretty-error": "^2.1.1",
     "raven": "^2.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "slug": "^0.9.1",
     "winston": "^2.3.1"
   }
